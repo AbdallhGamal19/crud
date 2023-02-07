@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container py-5 ">
+      <div class="box">
+        <label for="ProductName">ProductName</label>
+        <input type="text" class="form-control  mb-3" id="ProductName" />
+      </div>
+
+      <div class="box">
+        <label for="ProductPrice">ProductPrice</label>
+        <input type="number" class="form-control mb-3" id="ProductPrice" />
+        <p class="valid-feedback">valid</p>
+        <p class="invalid-feedback">pleace enter only numbers from 3 to 6</p>
+      </div>
+
+      <div class="box">
+        <label for="ProductCategory">ProductCategory</label>
+        <input type="text" class="form-control mb-3" id="ProductCategory" />
+        <p class="valid-feedback">valid</p>
+        <p class="invalid-feedback">pleace enter only lettrs from 4 to 8</p>
+      </div>
+
+      <label for="ProductDec">ProductDec</label>
+      <textarea class="form-control mb-5" id="ProductDec"></textarea>
+
+      <button class="btn btn-outline-primary mb-5" id="addProduct">
+        addProduct
+      </button>
+
+      <input
+        type="text"
+        class="form-control mb-3 w-50 m-auto"
+        id="search"
+        placeholder="serch"
+      />
+      
+      <table class="table">
+        <thead>
+
+          <th>ProductName</th>
+          <th>ProductPricest</th>
+          <th>ProductCategory</th>
+          <th>ProductDesc</th>
+          <th>Update</th>
+          <th>delete</th>
+        </thead>
+        <tbody id="add" class="position-relative"></tbody>
+          
+    </div>
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
